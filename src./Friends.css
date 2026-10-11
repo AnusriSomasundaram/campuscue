@@ -1,0 +1,167 @@
+
+/* ===== CampusCue Friends — Dark Theme ===== */
+
+.friends-page {
+  width: 100%;
+  padding: 8px 0 32px;
+  color: #f1f5f9;
+}
+
+.friends-heading {
+  margin-bottom: 28px;
+}
+
+.friends-heading h1 {
+  margin: 8px 0;
+  color: #f1f5ff;
+  font-size: clamp(26px, 4vw, 34px);
+  letter-spacing: -1px;
+}
+
+.friends-heading > p:last-child {
+  color: #9ca9bd;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.friends-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 20px 24px;
+  margin-bottom: 28px;
+  border: 1px solid #2b3650;
+  border-radius: 16px;
+  background: #151c30;
+}
+
+.friends-summary > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #b3bfd3;
+  font-size: 14px;
+}
+
+.friends-summary-number {
+  color: #a99bff;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.friends-summary > p {
+  margin: 0;
+  color: #9ca9bd;
+  font-size: 14px;
+}
+
+.friends-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.friend-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px 20px 22px;
+  text-align: center;
+  background: #151c30;
+  border: 1px solid #2b3650;
+  border-radius: 18px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.friend-card:hover {
+  transform: translateY(-3px);
+  border-color: #51488e;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
+.friend-avatar {
+  display: grid;
+  place-items: center;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: #302b5b;
+  color: #c1b8ff;
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  border: 1px solid #494078;
+}
+
+.friend-card h2 {
+  margin: 0 0 6px;
+  color: #f1f5ff;
+  font-size: 18px;
+}
+
+.friend-course {
+  margin: 0 0 18px;
+  color: #9ca9bd;
+  font-size: 13px;
+}
+
+.friend-interests {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+
+.friend-interests span {
+  padding: 6px 10px;
+  border-radius: 20px;
+  background: #26314a;
+  color: #c7d1e3;
+  border: 1px solid #35415c;
+  font-size: 12px;
+}
+
+.friend-button {
+  width: 100%;
+  margin-top: auto;
+  padding: 11px 16px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: #7565f0;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.friend-button:hover {
+  background: #8b7cff;
+  transform: translateY(-1px);
+}
+
+.friend-button.friend-added {
+  background: #1e4039;
+  color: #8be2b9;
+  border: 1px solid #326b59;
+}
+
+.friend-button.friend-added:hover {
+  background: #285447;
+}
+
+@media (max-width: 600px) {
+  .friends-summary {
+    padding: 18px;
+  }
+
+  .friends-grid {
+    grid-template-columns: 1fr;
+  }
+}
